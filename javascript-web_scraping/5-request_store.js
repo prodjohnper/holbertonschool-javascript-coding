@@ -19,14 +19,14 @@ if (!fileName) {
 }
 
 // Make a request to the API
-request(apiUrl, 'utf-8', (err, response, body) => {
+request(apiUrl, (err, response, body) => {
   // Check if there is an error
   if (err) {
     // Print the error
     console.error(err);
   } else {
     // Write the response to a file
-    fs.writeFile(fileName, body, (err) => {
+    fs.writeFile(fileName, body, 'utf-8', (err) => {
       if (err) {
         // Print the error
         console.error(err.message);
