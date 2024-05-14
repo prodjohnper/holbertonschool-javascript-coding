@@ -12,14 +12,14 @@ if (!movieId) {
   process.exit(1);
 }
 
-// Make a request to the URL and get the movie title
+// Make a request to the Star Wars API with the movie ID
 request(url, (err, response) => {
+  // If there is an error, log the error message and exit the process
   if (err) {
-    // Print the error if one occurred
-    console.error('Error:', err.message);
+    console.error(err.message);
     process.exit(1);
   } else {
-    // Print the movie title
+    // If the request is successful, parse the response body and log the movie title
     const data = JSON.parse(response.body);
     console.log(data.title);
   }
