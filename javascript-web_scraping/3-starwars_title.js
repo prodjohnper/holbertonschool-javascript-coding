@@ -17,16 +17,9 @@ request(apiUrl, (err, response, body) => {
   if (err) {
     // Print the error if one occurred
     console.error('Error:', err);
-    return;
-  }
-
-  // Parse the JSON response
-  try {
-    const movie = JSON.parse(body);
+  } else {
     // Print the movie title
+    const movie = JSON.parse(body);
     console.log(movie.title);
-  } catch (parseError) {
-    // Print an error if the JSON parsing fails
-    console.error('Error parsing JSON:', parseError);
   }
 });
