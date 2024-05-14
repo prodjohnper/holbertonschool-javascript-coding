@@ -31,7 +31,7 @@ request(apiUrl, (err, response, body) => {
   try {
     const movie = JSON.parse(body);
     // Print the movie title
-    console.log('Title:', movie.title);
+    console.log(movie.title);
   } catch (parseError) {
     // Print an error if the JSON parsing fails
     console.error('Error parsing JSON:', parseError);
