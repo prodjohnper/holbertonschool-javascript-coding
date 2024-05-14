@@ -17,6 +17,7 @@ request(url, (err, response) => {
   if (err) {
     // Print the error if one occurred
     console.error('Error:', err.message);
+    process.exit(1);
   } else {
     // Print the movie title
     const movie = JSON.parse(response.body);
