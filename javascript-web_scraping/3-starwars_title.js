@@ -20,13 +20,6 @@ request(apiUrl, (err, response, body) => {
     return;
   }
 
-  // Check if the response status code is not 200
-  if (response.statusCode !== 200) {
-    // Print an error message if the status code is not 200
-    console.error('Failed to fetch data:', response.statusCode);
-    return;
-  }
-
   // Parse the JSON response
   try {
     const movie = JSON.parse(body);
