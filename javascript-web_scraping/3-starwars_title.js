@@ -16,7 +16,7 @@ if (!movieId) {
 request(apiUrl, (err, response, body) => {
   if (err) {
     // Print the error if one occurred
-    console.error('Error:', err);
+    console.error('Error:', err.message);
     return;
   }
 
