@@ -20,6 +20,5 @@ fs.writeFile(filePath, content, 'utf-8', (err) => {
   // If an error occurred, show it and return
   if (err) {
     console.error(err);
-    return;
   }
 });
