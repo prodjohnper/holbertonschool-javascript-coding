@@ -5,7 +5,7 @@ const request = require('request');
 
 // Get the movie ID from the command line arguments
 const movieId = process.argv[2];
-const url = `https://swapi.dev/api/films/${movieId}/`;
+const url = `https://swapi.dev/api/films/${movieId}`;
 
 if (!movieId) {
   console.error('Please provide a movie ID');
