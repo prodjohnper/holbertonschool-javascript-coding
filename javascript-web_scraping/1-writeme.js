@@ -22,6 +22,4 @@ fs.writeFile(filePath, content, 'utf-8', (err) => {
     console.error(err);
     return;
   }
-  // If no error occurred, show a success message
-  console.log('File has been written successfully!');
 });
