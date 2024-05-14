@@ -20,7 +20,7 @@ request(url, (err, response) => {
     process.exit(1);
   } else {
     // Print the movie title
-    const movie = JSON.parse(response.body);
-    console.log(movie.title);
+    const data = JSON.parse(response.body);
+    console.log(data.title);
   }
 });
