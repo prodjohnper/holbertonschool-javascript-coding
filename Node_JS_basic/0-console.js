@@ -5,7 +5,7 @@
 */
 
 function displayMessage(message) {
-  if (message == null) {
+  if (!message) {
     // If the str argument is not provided, throw an error
     throw new Error('The string argument is required');
   }
