@@ -4,8 +4,8 @@
   Function that prints in `STDOUT` the str argument.
 */
 
-function displayMessage(str) {
-  console.log(str);
+function displayMessage(string) {
+  console.log(string);
 }
 
 // Export the function to be used in other files
