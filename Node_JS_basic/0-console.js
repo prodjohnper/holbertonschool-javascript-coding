@@ -3,7 +3,6 @@
 
   Function that prints in `STDOUT` the str argument.
 */
-const process = require('process');
 
 function displayMessage(message) {
   if (!message) {
@@ -11,7 +10,7 @@ function displayMessage(message) {
     throw new Error('The string argument is required');
   }
   // Print the message in the `STDOUT`
-  process.stdout.write(message);
+  console.log(message);
 }
 // Export the function to be used in other files
 module.exports = displayMessage;
