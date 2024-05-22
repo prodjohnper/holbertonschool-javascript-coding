@@ -3,8 +3,8 @@
 
   Function that prints in `STDOUT` the str argument.
 */
-
 const displayMessage = (str) => {
+  // Print the str argument in the console
   console.log(str);
 };
 
