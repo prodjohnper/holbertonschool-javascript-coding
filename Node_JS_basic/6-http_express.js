@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 
 // Set server's port
 app.listen(1245, () => {
+  // Log the server's port
   console.log('Server is listening on port 1245');
 });
 
