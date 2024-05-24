@@ -5,7 +5,8 @@
 */
 
 // Display welcome msg
-console.log('Welcome to Holberton School, what is your name?');
+process.stdout.write('Welcome to Holberton School, what is your name?');
+process.stdin.setEncoding('utf8');
 
 // Get user input
 process.stdin.on('readable', () => {
