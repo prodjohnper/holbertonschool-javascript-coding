@@ -3,9 +3,9 @@
 
   Function that prints in `STDOUT` the str argument.
 */
-const displayMessage = (str) => {
+const displayMessage = (message) => {
   // Print the str argument in the console
-  console.log(str);
+  console.log(message);
 };
 
 // Export the function to be used in other files
