@@ -1,0 +1,14 @@
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Test files
+cisfun
+hbtn
+loripsum
+my_file.txt
+*main.js
+*main_0.js
+*main_1.js
